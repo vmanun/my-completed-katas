@@ -17,10 +17,7 @@
 public class Line {
   public static String Tickets(int[] peopleInLine)
   {
-    int billCount25  = 0, 
-        billCount50  = 0, 
-        billCount100 = 0,
-        total = 0;
+    int billCount25  = 0, billCount50  = 0;
     
     for(int person : peopleInLine) {
       if(person == 25) ++billCount25;
@@ -37,7 +34,6 @@ public class Line {
         else return "NO";
       }
     }
-    
     return "YES";
   }
 }
