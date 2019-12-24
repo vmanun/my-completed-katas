@@ -26,7 +26,6 @@ public class Line {
         if(billCount25 >= 1) --billCount25;
         else return "NO";
       } else if(person == 100) {
-        ++billCount100;
         if((billCount25 >= 1 && billCount50 >= 1)) {
           --billCount25;
           --billCount50;
